@@ -1,6 +1,7 @@
 import os
 import requests
 import json
+import time
 
 API_KEY = os.environ["TWELVE_DATA_API_KEY"]
 
@@ -44,10 +45,10 @@ def laguerre(series, g):
     out = []
 
     for i, p in enumerate(series):
-        prev_l0 = l0[i-1] if i > 0 else 0.0
-        prev_l1 = l1[i-1] if i > 0 else 0.0
-        prev_l2 = l2[i-1] if i > 0 else 0.0
-        prev_l3 = l3[i-1] if i > 0 else 0.0
+        prev_l0 = l0[i - 1] if i > 0 else 0.0
+        prev_l1 = l1[i - 1] if i > 0 else 0.0
+        prev_l2 = l2[i - 1] if i > 0 else 0.0
+        prev_l3 = l3[i - 1] if i > 0 else 0.0
 
         cur_l0 = (1 - g) * p + g * prev_l0
         cur_l1 = -g * cur_l0 + prev_l0 + g * prev_l1
@@ -59,20 +60,25 @@ def laguerre(series, g):
         l2.append(cur_l2)
         l3.append(cur_l3)
 
-        out.append((cur_l0 + 2 * cur_l1 + 2 * cur_l2 + cur_l3) / 6)
+        out.append(
+            (cur_l0 + 2 * cur_l1 + 2 * cur_l2 + cur_l3) / 6
+        )
 
     return out
 
 def percent_rank_current(values, length=1000):
-    if len(values) < length:
+    if len(values) < length + 1:
         return None
 
-    window = values[-length:]
-    current = window[-1]
+    current = values[-1]
+    previous_values = values[-(length + 1):-1]
 
-    less_than_current = sum(1 for v in window[:-1] if v < current)
+    less_or_equal = sum(
+        1 for v in previous_values
+        if v <= current
+    )
 
-    return (less_than_current / (length - 1)) * 100
+    return (less_or_equal / length) * 100
 
 def get_signal(symbol):
     url = "https://api.twelvedata.com/time_series"
@@ -88,12 +94,19 @@ def get_signal(symbol):
     data = r.json()
 
     if data.get("status") == "error":
-        return {"symbol": symbol, "signal": "ERROR", "message": data.get("message")}
+        return {
+            "symbol": symbol,
+            "signal": "ERROR",
+            "message": data.get("message", "")
+        }
 
     values = data.get("values", [])
 
-    if len(values) < 1000:
-        return {"symbol": symbol, "signal": "INSUFFICIENT_HISTORY"}
+    if len(values) < 1001:
+        return {
+            "symbol": symbol,
+            "signal": "INSUFFICIENT_HISTORY"
+        }
 
     values = list(reversed(values))
 
@@ -109,14 +122,17 @@ def get_signal(symbol):
 
     for fast, slow in zip(lmas, lmal):
         if slow == 0:
-            ppo_b.append(0)
+            ppo_b.append(0.0)
         else:
             ppo_b.append(((slow - fast) / slow) * 100)
 
     rank = percent_rank_current(ppo_b, 1000)
 
     if rank is None:
-        return {"symbol": symbol, "signal": "INSUFFICIENT_HISTORY"}
+        return {
+            "symbol": symbol,
+            "signal": "INSUFFICIENT_HISTORY"
+        }
 
     pct_rank_b = rank * -1
 
@@ -138,11 +154,27 @@ def get_signal(symbol):
 
 results = []
 
-for ticker in TICKERS:
+for i, ticker in enumerate(TICKERS):
+    if i > 0 and i % 7 == 0:
+        print("Waiting 65 seconds for Twelve Data rate limit reset...")
+        time.sleep(65)
+
     try:
         result = get_signal(ticker)
+
+        if (
+            result.get("signal") == "ERROR"
+            and "credits" in result.get("message", "").lower()
+        ):
+            print(
+                f"Rate limited on {ticker}. Waiting 65 seconds and retrying..."
+            )
+            time.sleep(65)
+            result = get_signal(ticker)
+
         results.append(result)
         print(result)
+
     except Exception as e:
         results.append({
             "symbol": ticker,
