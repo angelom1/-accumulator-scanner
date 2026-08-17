@@ -61,7 +61,8 @@
   },
   {
     "symbol": "ARM",
-    "signal": "INSUFFICIENT_HISTORY"
+    "signal": "INSUFFICIENT_HISTORY",
+    "date": "2026-08-17"
   },
   {
     "symbol": "TSM",
@@ -161,11 +162,13 @@
   },
   {
     "symbol": "SNDK",
-    "signal": "INSUFFICIENT_HISTORY"
+    "signal": "INSUFFICIENT_HISTORY",
+    "date": "2026-08-17"
   },
   {
     "symbol": "ALAB",
-    "signal": "INSUFFICIENT_HISTORY"
+    "signal": "INSUFFICIENT_HISTORY",
+    "date": "2026-08-17"
   },
   {
     "symbol": "CRDO",
@@ -259,11 +262,13 @@
   },
   {
     "symbol": "NBIS",
-    "signal": "INSUFFICIENT_HISTORY"
+    "signal": "INSUFFICIENT_HISTORY",
+    "date": "2026-08-17"
   },
   {
     "symbol": "CRWV",
-    "signal": "INSUFFICIENT_HISTORY"
+    "signal": "INSUFFICIENT_HISTORY",
+    "date": "2026-08-17"
   },
   {
     "symbol": "VRT",
@@ -327,13 +332,15 @@
   },
   {
     "symbol": "PSTG",
-    "signal": "NONE",
+    "signal": "STALE_DATA",
     "date": "2026-04-16",
+    "reference_date": "2026-08-17",
     "close": "67.82"
   },
   {
     "symbol": "GEV",
-    "signal": "INSUFFICIENT_HISTORY"
+    "signal": "INSUFFICIENT_HISTORY",
+    "date": "2026-08-17"
   },
   {
     "symbol": "ETN",
@@ -409,7 +416,8 @@
   },
   {
     "symbol": "NNE",
-    "signal": "INSUFFICIENT_HISTORY"
+    "signal": "INSUFFICIENT_HISTORY",
+    "date": "2026-08-17"
   },
   {
     "symbol": "CCJ",
@@ -443,7 +451,8 @@
   },
   {
     "symbol": "TLN",
-    "signal": "INSUFFICIENT_HISTORY"
+    "signal": "INSUFFICIENT_HISTORY",
+    "date": "2026-08-17"
   },
   {
     "symbol": "PLTR",
@@ -543,8 +552,9 @@
   },
   {
     "symbol": "CYBR",
-    "signal": "STRONG_BUY",
+    "signal": "STALE_DATA",
     "date": "2026-02-10",
+    "reference_date": "2026-08-17",
     "close": "408.76"
   },
   {
@@ -579,8 +589,9 @@
   },
   {
     "symbol": "CFLT",
-    "signal": "NONE",
+    "signal": "STALE_DATA",
     "date": "2026-03-16",
+    "reference_date": "2026-08-17",
     "close": "30.995"
   },
   {
@@ -597,7 +608,8 @@
   },
   {
     "symbol": "RDDT",
-    "signal": "INSUFFICIENT_HISTORY"
+    "signal": "INSUFFICIENT_HISTORY",
+    "date": "2026-08-17"
   },
   {
     "symbol": "SHOP",
@@ -673,7 +685,8 @@
   },
   {
     "symbol": "CAVA",
-    "signal": "INSUFFICIENT_HISTORY"
+    "signal": "INSUFFICIENT_HISTORY",
+    "date": "2026-08-17"
   },
   {
     "symbol": "CELH",
@@ -905,7 +918,8 @@
   },
   {
     "symbol": "TEM",
-    "signal": "INSUFFICIENT_HISTORY"
+    "signal": "INSUFFICIENT_HISTORY",
+    "date": "2026-08-17"
   },
   {
     "symbol": "OSCR",
@@ -1149,8 +1163,9 @@
   },
   {
     "symbol": "X",
-    "signal": "NONE",
+    "signal": "STALE_DATA",
     "date": "2025-06-17",
+    "reference_date": "2026-08-17",
     "close": "54.85"
   },
   {
@@ -1269,8 +1284,9 @@
   },
   {
     "symbol": "CTRA",
-    "signal": "NONE",
+    "signal": "STALE_DATA",
     "date": "2026-05-06",
+    "reference_date": "2026-08-17",
     "close": "32.56"
   },
   {
@@ -1293,7 +1309,8 @@
   },
   {
     "symbol": "NXT",
-    "signal": "INSUFFICIENT_HISTORY"
+    "signal": "INSUFFICIENT_HISTORY",
+    "date": "2026-08-17"
   },
   {
     "symbol": "FLNC",
