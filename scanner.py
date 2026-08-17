@@ -6,35 +6,34 @@ ALPACA_API_KEY = os.environ["ALPACA_API_KEY"]
 ALPACA_SECRET_KEY = os.environ["ALPACA_SECRET_KEY"]
 
 TICKERS = [
+    # MEGA CAP / AI / SEMICONDUCTORS
     "AAPL", "MSFT", "NVDA", "AMZN", "META", "GOOGL", "TSLA",
-    "MU", "AMD", "AVGO", "ARM", "TSM", "ASML", "LRCX", "AMAT",
-    "KLAC", "MRVL", "QCOM", "INTC", "NXPI", "ON", "MPWR", "MCHP",
-    "ADI", "TXN", "WDC", "STX", "SNDK", "ALAB", "CRDO", "SMCI",
-    "DELL", "HPE", "CLS", "JBL", "APH", "TEL", "ACLS", "AEHR",
-    "COHU", "CAMT", "LSCC", "QRVO", "SWKS", "NBIS", "CRWV", "VRT",
-    "ANET", "AAOI", "LITE", "COHR", "CIEN", "FN", "GLW", "KEYS",
-    "NTAP", "PSTG", "GEV", "ETN", "CEG", "VST", "NRG", "PWR",
-    "HUBB", "EME", "FIX", "MOD", "BE", "OKLO", "SMR", "NNE", "CCJ",
-    "LEU", "UEC", "UUUU", "BWXT", "TLN", "PLTR", "ORCL", "CRM",
-    "NOW", "APP", "CRWD", "PANW", "NET", "DDOG", "SNOW", "MDB",
-    "GTLB", "PATH", "IOT", "S", "FTNT", "CYBR", "ZS", "OKTA", "TEAM",
-    "HUBS", "ESTC", "CFLT", "DOCN", "TWLO", "RDDT", "SHOP", "UBER",
-    "DASH", "ABNB", "RBLX", "DUOL", "CVNA", "AFRM", "SOFI", "HOOD",
-    "COIN", "MSTR", "CAVA", "CELH", "ELF", "ONON", "BROS", "TOST",
-    "HIMS", "SE", "MELI", "PDD", "BABA", "JD", "GRAB", "RIVN", "LCID",
-    "IONQ", "RGTI", "QBTS", "QUBT", "RKLB", "ASTS", "LUNR", "RDW",
-    "BKSY", "PL", "AVAV", "KTOS", "RCAT", "JOBY", "ACHR", "LDOS",
-    "HII", "LLY", "ISRG", "TGTX", "TWST", "VKTX", "CRSP", "RXRX",
-    "TEM", "OSCR", "PRAX", "LGND", "MRNA", "BNTX", "VRTX", "REGN",
-    "ALNY", "GH", "NTRA", "RARE", "BEAM", "JPM", "GS", "V", "MA",
-    "XYZ", "PYPL", "NU", "UPST", "LMND", "ROOT", "IBKR", "SCHW", "C",
-    "BAC", "KKR", "APO", "BX", "AA", "FCX", "CLF", "MP", "ALB",
-    "SQM", "CDE", "AG", "HL", "NEM", "GOLD", "X", "NUE", "STLD",
-    "TECK", "VALE", "RIO", "XOM", "CVX", "COP", "OXY", "FANG", "DVN",
-    "EOG", "SLB", "HAL", "BKR", "LNG", "EQT", "RRC", "AR", "CTRA",
-    "FSLR", "ENPH", "RUN", "NXT", "FLNC", "STEM", "QS", "CHPT",
-    "BLDP", "CAT", "DE", "URI", "PH", "HON", "RTX", "GE", "NFLX",
-    "ADBE", "INTU", "COST", "WMT", "AMGN", "BKNG", "MAR", "CMG", "SPOT"
+    "AMD", "AVGO", "MU", "QCOM", "INTC", "AMAT", "LRCX", "KLAC",
+    "MRVL", "NXPI", "ON", "ADI", "TXN", "WDC", "STX", "ANET",
+    "VRT", "SMCI", "DELL",
+
+    # SOFTWARE / CLOUD / CYBERSECURITY
+    "PLTR", "ORCL", "CRM", "NOW", "APP", "CRWD", "PANW", "NET",
+    "DDOG", "SNOW", "MDB", "TEAM", "OKTA", "ZS", "FTNT",
+
+    # INTERNET / FINTECH / HIGH-BETA CONSUMER TECH
+    "UBER", "ABNB", "DASH", "SHOP", "PYPL", "SOFI", "HOOD", "COIN",
+    "MSTR", "RBLX", "DUOL", "AFRM", "CVNA", "SE", "MELI", "SPOT",
+
+    # POWER / INDUSTRIAL / ENERGY
+    "VST", "CEG", "NRG", "ETN", "PWR", "BE", "CCJ", "UEC",
+    "FSLR", "ENPH", "XOM", "CVX", "COP", "OXY", "SLB", "GE",
+    "CAT", "URI",
+
+    # FINANCIALS
+    "JPM", "GS", "BAC", "C", "SCHW", "IBKR", "V", "MA", "KKR",
+    "APO", "BX",
+
+    # HEALTHCARE / BIOTECH MOMENTUM
+    "LLY", "ISRG", "VRTX", "REGN", "ALNY", "NTRA", "MRNA", "UNH",
+
+    # CONSUMER MOMENTUM
+    "CELH", "ELF", "ONON", "BROS", "HIMS", "CMG"
 ]
 
 
@@ -147,8 +146,7 @@ def get_signal(symbol, bars, reference_date):
     latest = bars[-1]
     latest_date = latest["t"][:10]
 
-    # Safety check:
-    # Never allow an old bar to generate a current BUY/STRONG_BUY signal.
+    # Prevent stale historical data from producing a current signal.
     if latest_date < reference_date:
         return {
             "symbol": symbol,
