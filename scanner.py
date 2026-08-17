@@ -1,9 +1,10 @@
 import os
 import requests
 import json
-import time
+from datetime import datetime, timezone
 
-API_KEY = os.environ["TWELVE_DATA_API_KEY"]
+ALPACA_API_KEY = os.environ["ALPACA_API_KEY"]
+ALPACA_SECRET_KEY = os.environ["ALPACA_SECRET_KEY"]
 
 TICKERS = [
     "AAPL", "MSFT", "NVDA", "AMZN", "META", "GOOGL", "TSLA",
@@ -37,12 +38,9 @@ TICKERS = [
     "ADBE", "INTU", "COST", "WMT", "AMGN", "BKNG", "MAR", "CMG", "SPOT"
 ]
 
+
 def laguerre(series, g):
-    l0 = []
-    l1 = []
-    l2 = []
-    l3 = []
-    out = []
+    l0, l1, l2, l3, out = [], [], [], [], []
 
     for i, p in enumerate(series):
         prev_l0 = l0[i - 1] if i > 0 else 0.0
@@ -66,53 +64,77 @@ def laguerre(series, g):
 
     return out
 
+
 def percent_rank_current(values, length=1000):
     if len(values) < length + 1:
         return None
 
     current = values[-1]
     previous_values = values[-(length + 1):-1]
-
-    less_or_equal = sum(
-        1 for v in previous_values
-        if v <= current
-    )
+    less_or_equal = sum(1 for v in previous_values if v <= current)
 
     return (less_or_equal / length) * 100
 
-def get_signal(symbol):
-    url = "https://api.twelvedata.com/time_series"
 
-    params = {
-        "symbol": symbol,
-        "interval": "1day",
-        "outputsize": 1200,
-        "apikey": API_KEY
+def download_all_bars():
+    url = "https://data.alpaca.markets/v2/stocks/bars"
+
+    headers = {
+        "APCA-API-KEY-ID": ALPACA_API_KEY,
+        "APCA-API-SECRET-KEY": ALPACA_SECRET_KEY,
     }
 
-    r = requests.get(url, params=params, timeout=30)
-    data = r.json()
+    params = {
+        "symbols": ",".join(TICKERS),
+        "timeframe": "1Day",
+        "start": "2021-01-01T00:00:00Z",
+        "limit": 10000,
+        "adjustment": "raw",
+        "feed": "iex",
+        "sort": "asc",
+    }
 
-    if data.get("status") == "error":
-        return {
-            "symbol": symbol,
-            "signal": "ERROR",
-            "message": data.get("message", "")
-        }
+    all_bars = {ticker: [] for ticker in TICKERS}
+    page_token = None
 
-    values = data.get("values", [])
+    while True:
+        if page_token:
+            params["page_token"] = page_token
+        elif "page_token" in params:
+            del params["page_token"]
 
-    if len(values) < 1001:
+        response = requests.get(
+            url,
+            headers=headers,
+            params=params,
+            timeout=60
+        )
+        response.raise_for_status()
+
+        data = response.json()
+
+        for symbol, bars in data.get("bars", {}).items():
+            if symbol in all_bars:
+                all_bars[symbol].extend(bars)
+
+        page_token = data.get("next_page_token")
+
+        if not page_token:
+            break
+
+    return all_bars
+
+
+def get_signal(symbol, bars):
+    if len(bars) < 1001:
         return {
             "symbol": symbol,
             "signal": "INSUFFICIENT_HISTORY"
         }
 
-    values = list(reversed(values))
-
     hl2 = [
-        (float(row["high"]) + float(row["low"])) / 2
-        for row in values
+        (float(row["h"]) + float(row["l"])) / 2
+        for row in bars
     ]
 
     lmas = laguerre(hl2, 0.4)
@@ -143,44 +165,42 @@ def get_signal(symbol):
     else:
         signal = "NONE"
 
-    latest = values[-1]
+    latest = bars[-1]
 
     return {
         "symbol": symbol,
         "signal": signal,
-        "date": latest["datetime"],
-        "close": latest["close"]
+        "date": latest["t"][:10],
+        "close": str(latest["c"])
     }
+
 
 results = []
 
-for i, ticker in enumerate(TICKERS):
-    if i > 0 and i % 7 == 0:
-        print("Waiting 65 seconds for Twelve Data rate limit reset...")
-        time.sleep(65)
+try:
+    print("Downloading Alpaca market data...")
+    all_bars = download_all_bars()
+    print("Download complete.")
 
-    try:
-        result = get_signal(ticker)
+    for ticker in TICKERS:
+        try:
+            result = get_signal(ticker, all_bars.get(ticker, []))
+            results.append(result)
+            print(result)
 
-        if (
-            result.get("signal") == "ERROR"
-            and "credits" in result.get("message", "").lower()
-        ):
-            print(
-                f"Rate limited on {ticker}. Waiting 65 seconds and retrying..."
-            )
-            time.sleep(65)
-            result = get_signal(ticker)
+        except Exception as e:
+            result = {
+                "symbol": ticker,
+                "signal": "ERROR",
+                "message": str(e)
+            }
+            results.append(result)
+            print(result)
 
-        results.append(result)
-        print(result)
-
-    except Exception as e:
-        results.append({
-            "symbol": ticker,
-            "signal": "ERROR",
-            "message": str(e)
-        })
+except Exception as e:
+    raise RuntimeError(f"Alpaca data download failed: {e}")
 
 with open("signals.json", "w") as f:
     json.dump(results, f, indent=2)
+
+print(f"Finished. Scanned {len(results)} tickers.")
