@@ -6,34 +6,55 @@ ALPACA_API_KEY = os.environ["ALPACA_API_KEY"]
 ALPACA_SECRET_KEY = os.environ["ALPACA_SECRET_KEY"]
 
 TICKERS = [
-    # MEGA CAP / AI / SEMICONDUCTORS
+    # ============================================================
+    # MEGA CAP / SEMICONDUCTORS / AI INFRASTRUCTURE — 34
+    # ============================================================
     "AAPL", "MSFT", "NVDA", "AMZN", "META", "GOOGL", "TSLA",
     "AMD", "AVGO", "MU", "QCOM", "INTC", "AMAT", "LRCX", "KLAC",
     "MRVL", "NXPI", "ON", "ADI", "TXN", "WDC", "STX", "ANET",
-    "VRT", "SMCI", "DELL",
+    "VRT", "SMCI", "DELL", "TSM", "ASML", "MPWR", "GLW", "JBL",
+    "CIEN", "LITE", "COHR",
 
-    # SOFTWARE / CLOUD / CYBERSECURITY
+    # ============================================================
+    # SOFTWARE / CLOUD / CYBERSECURITY — 21
+    # ============================================================
     "PLTR", "ORCL", "CRM", "NOW", "APP", "CRWD", "PANW", "NET",
-    "DDOG", "SNOW", "MDB", "TEAM", "OKTA", "ZS", "FTNT",
+    "DDOG", "SNOW", "MDB", "OKTA", "ZS", "FTNT", "ADBE", "INTU",
+    "SNPS", "CDNS", "WDAY", "HUBS", "TWLO",
 
-    # INTERNET / FINTECH / HIGH-BETA CONSUMER TECH
+    # ============================================================
+    # INTERNET / CONSUMER / FINTECH / TRAVEL — 37
+    # ============================================================
     "UBER", "ABNB", "DASH", "SHOP", "PYPL", "SOFI", "HOOD", "COIN",
     "MSTR", "RBLX", "DUOL", "AFRM", "CVNA", "SE", "MELI", "SPOT",
+    "DKNG", "ROKU", "TTD", "F", "GM", "NKE", "SBUX", "DIS", "CMG",
+    "CELH", "ELF", "ONON", "BROS", "HIMS", "AAL", "UAL", "DAL",
+    "CCL", "RCL", "BABA", "PDD",
 
-    # POWER / INDUSTRIAL / ENERGY
-    "VST", "CEG", "NRG", "ETN", "PWR", "BE", "CCJ", "UEC",
-    "FSLR", "ENPH", "XOM", "CVX", "COP", "OXY", "SLB", "GE",
-    "CAT", "URI",
+    # ============================================================
+    # POWER / INDUSTRIALS / DEFENSE — 19
+    # ============================================================
+    "VST", "CEG", "NRG", "ETN", "PWR", "BE", "GE", "CAT", "URI",
+    "BA", "RTX", "LMT", "NOC", "GD", "LHX", "HON", "DE", "PH",
+    "FDX",
 
-    # FINANCIALS
-    "JPM", "GS", "BAC", "C", "SCHW", "IBKR", "V", "MA", "KKR",
-    "APO", "BX",
+    # ============================================================
+    # ENERGY / SOLAR / MATERIALS — 18
+    # ============================================================
+    "XOM", "CVX", "COP", "OXY", "FANG", "DVN", "EOG", "SLB",
+    "HAL", "BKR", "LNG", "EQT", "FSLR", "ENPH", "FCX", "AA",
+    "CLF", "MP",
 
-    # HEALTHCARE / BIOTECH MOMENTUM
-    "LLY", "ISRG", "VRTX", "REGN", "ALNY", "NTRA", "MRNA", "UNH",
+    # ============================================================
+    # FINANCIALS — 13
+    # ============================================================
+    "JPM", "GS", "BAC", "C", "MS", "WFC", "SCHW", "IBKR", "V",
+    "MA", "KKR", "APO", "BX",
 
-    # CONSUMER MOMENTUM
-    "CELH", "ELF", "ONON", "BROS", "HIMS", "CMG"
+    # ============================================================
+    # HEALTHCARE / BIOTECH — 8
+    # ============================================================
+    "LLY", "UNH", "ISRG", "VRTX", "REGN", "ALNY", "NTRA", "MRNA"
 ]
 
 
@@ -69,7 +90,11 @@ def percent_rank_current(values, length=1000):
 
     current = values[-1]
     previous_values = values[-(length + 1):-1]
-    less_or_equal = sum(1 for v in previous_values if v <= current)
+
+    less_or_equal = sum(
+        1 for v in previous_values
+        if v <= current
+    )
 
     return (less_or_equal / length) * 100
 
@@ -92,10 +117,15 @@ def download_all_bars():
         "sort": "asc",
     }
 
-    all_bars = {ticker: [] for ticker in TICKERS}
+    all_bars = {
+        ticker: []
+        for ticker in TICKERS
+    }
+
     page_token = None
 
     while True:
+
         if page_token:
             params["page_token"] = page_token
         elif "page_token" in params:
@@ -109,9 +139,11 @@ def download_all_bars():
         )
 
         response.raise_for_status()
+
         data = response.json()
 
         for symbol, bars in data.get("bars", {}).items():
+
             if symbol in all_bars:
                 all_bars[symbol].extend(bars)
 
@@ -124,19 +156,26 @@ def download_all_bars():
 
 
 def get_reference_date(all_bars):
+
     latest_dates = []
 
     for bars in all_bars.values():
+
         if bars:
-            latest_dates.append(bars[-1]["t"][:10])
+            latest_dates.append(
+                bars[-1]["t"][:10]
+            )
 
     if not latest_dates:
-        raise RuntimeError("No market data was returned by Alpaca.")
+        raise RuntimeError(
+            "No market data was returned by Alpaca."
+        )
 
     return max(latest_dates)
 
 
 def get_signal(symbol, bars, reference_date):
+
     if not bars:
         return {
             "symbol": symbol,
@@ -144,10 +183,18 @@ def get_signal(symbol, bars, reference_date):
         }
 
     latest = bars[-1]
+
     latest_date = latest["t"][:10]
 
-    # Prevent stale historical data from producing a current signal.
+    # ------------------------------------------------------------
+    # STALE-DATA SAFETY GUARD
+    #
+    # A ticker whose newest bar is older than the freshest market
+    # date cannot produce BUY or STRONG_BUY.
+    # ------------------------------------------------------------
+
     if latest_date < reference_date:
+
         return {
             "symbol": symbol,
             "signal": "STALE_DATA",
@@ -156,32 +203,61 @@ def get_signal(symbol, bars, reference_date):
             "close": str(latest["c"])
         }
 
+    # ------------------------------------------------------------
+    # 1000-DAY ACCUMULATOR HISTORY REQUIREMENT
+    # ------------------------------------------------------------
+
     if len(bars) < 1001:
+
         return {
             "symbol": symbol,
             "signal": "INSUFFICIENT_HISTORY",
             "date": latest_date
         }
 
+    # ------------------------------------------------------------
+    # HL2
+    # ------------------------------------------------------------
+
     hl2 = [
         (float(row["h"]) + float(row["l"])) / 2
         for row in bars
     ]
 
+    # ------------------------------------------------------------
+    # LAGUERRE MOVING AVERAGES
+    # ------------------------------------------------------------
+
     lmas = laguerre(hl2, 0.4)
     lmal = laguerre(hl2, 0.8)
+
+    # ------------------------------------------------------------
+    # PPO
+    # ------------------------------------------------------------
 
     ppo_b = []
 
     for fast, slow in zip(lmas, lmal):
+
         if slow == 0:
             ppo_b.append(0.0)
-        else:
-            ppo_b.append(((slow - fast) / slow) * 100)
 
-    rank = percent_rank_current(ppo_b, 1000)
+        else:
+            ppo_b.append(
+                ((slow - fast) / slow) * 100
+            )
+
+    # ------------------------------------------------------------
+    # 1000-DAY PERCENT RANK
+    # ------------------------------------------------------------
+
+    rank = percent_rank_current(
+        ppo_b,
+        1000
+    )
 
     if rank is None:
+
         return {
             "symbol": symbol,
             "signal": "INSUFFICIENT_HISTORY",
@@ -190,10 +266,16 @@ def get_signal(symbol, bars, reference_date):
 
     pct_rank_b = rank * -1
 
+    # ------------------------------------------------------------
+    # ACCUMULATOR SIGNAL
+    # ------------------------------------------------------------
+
     if pct_rank_b <= -95:
         signal = "STRONG_BUY"
+
     elif pct_rank_b <= -85:
         signal = "BUY"
+
     else:
         signal = "NONE"
 
@@ -205,21 +287,32 @@ def get_signal(symbol, bars, reference_date):
     }
 
 
+# ================================================================
+# RUN SCANNER
+# ================================================================
+
 results = []
 
 try:
+
     print("Downloading Alpaca market data...")
 
     all_bars = download_all_bars()
 
     print("Download complete.")
 
-    reference_date = get_reference_date(all_bars)
+    reference_date = get_reference_date(
+        all_bars
+    )
 
-    print(f"Freshest market date: {reference_date}")
+    print(
+        f"Freshest market date: {reference_date}"
+    )
 
     for ticker in TICKERS:
+
         try:
+
             result = get_signal(
                 ticker,
                 all_bars.get(ticker, []),
@@ -227,9 +320,11 @@ try:
             )
 
             results.append(result)
+
             print(result)
 
         except Exception as e:
+
             result = {
                 "symbol": ticker,
                 "signal": "ERROR",
@@ -237,29 +332,61 @@ try:
             }
 
             results.append(result)
+
             print(result)
 
 except Exception as e:
-    raise RuntimeError(f"Alpaca data download failed: {e}")
+
+    raise RuntimeError(
+        f"Alpaca data download failed: {e}"
+    )
 
 
-with open("signals.json", "w") as f:
-    json.dump(results, f, indent=2)
+# ================================================================
+# SAVE JSON
+# ================================================================
 
+with open(
+    "signals.json",
+    "w"
+) as f:
+
+    json.dump(
+        results,
+        f,
+        indent=2
+    )
+
+
+# ================================================================
+# SUMMARY
+# ================================================================
 
 summary = {}
 
 for result in results:
+
     signal = result["signal"]
-    summary[signal] = summary.get(signal, 0) + 1
+
+    summary[signal] = (
+        summary.get(signal, 0) + 1
+    )
 
 
 print("")
 print("SCAN SUMMARY")
 print("------------")
 
-for signal, count in sorted(summary.items()):
-    print(f"{signal}: {count}")
+for signal, count in sorted(
+    summary.items()
+):
+
+    print(
+        f"{signal}: {count}"
+    )
+
 
 print("")
-print(f"Finished. Scanned {len(results)} tickers.")
+print(
+    f"Finished. Scanned {len(results)} tickers."
+)
