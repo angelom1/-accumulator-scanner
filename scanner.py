@@ -1,7 +1,6 @@
 import os
 import requests
 import json
-from datetime import datetime, timezone
 
 ALPACA_API_KEY = os.environ["ALPACA_API_KEY"]
 ALPACA_SECRET_KEY = os.environ["ALPACA_SECRET_KEY"]
@@ -109,8 +108,8 @@ def download_all_bars():
             params=params,
             timeout=60
         )
-        response.raise_for_status()
 
+        response.raise_for_status()
         data = response.json()
 
         for symbol, bars in data.get("bars", {}).items():
@@ -125,11 +124,45 @@ def download_all_bars():
     return all_bars
 
 
-def get_signal(symbol, bars):
+def get_reference_date(all_bars):
+    latest_dates = []
+
+    for bars in all_bars.values():
+        if bars:
+            latest_dates.append(bars[-1]["t"][:10])
+
+    if not latest_dates:
+        raise RuntimeError("No market data was returned by Alpaca.")
+
+    return max(latest_dates)
+
+
+def get_signal(symbol, bars, reference_date):
+    if not bars:
+        return {
+            "symbol": symbol,
+            "signal": "NO_DATA"
+        }
+
+    latest = bars[-1]
+    latest_date = latest["t"][:10]
+
+    # Safety check:
+    # Never allow an old bar to generate a current BUY/STRONG_BUY signal.
+    if latest_date < reference_date:
+        return {
+            "symbol": symbol,
+            "signal": "STALE_DATA",
+            "date": latest_date,
+            "reference_date": reference_date,
+            "close": str(latest["c"])
+        }
+
     if len(bars) < 1001:
         return {
             "symbol": symbol,
-            "signal": "INSUFFICIENT_HISTORY"
+            "signal": "INSUFFICIENT_HISTORY",
+            "date": latest_date
         }
 
     hl2 = [
@@ -153,7 +186,8 @@ def get_signal(symbol, bars):
     if rank is None:
         return {
             "symbol": symbol,
-            "signal": "INSUFFICIENT_HISTORY"
+            "signal": "INSUFFICIENT_HISTORY",
+            "date": latest_date
         }
 
     pct_rank_b = rank * -1
@@ -165,12 +199,10 @@ def get_signal(symbol, bars):
     else:
         signal = "NONE"
 
-    latest = bars[-1]
-
     return {
         "symbol": symbol,
         "signal": signal,
-        "date": latest["t"][:10],
+        "date": latest_date,
         "close": str(latest["c"])
     }
 
@@ -179,12 +211,23 @@ results = []
 
 try:
     print("Downloading Alpaca market data...")
+
     all_bars = download_all_bars()
+
     print("Download complete.")
+
+    reference_date = get_reference_date(all_bars)
+
+    print(f"Freshest market date: {reference_date}")
 
     for ticker in TICKERS:
         try:
-            result = get_signal(ticker, all_bars.get(ticker, []))
+            result = get_signal(
+                ticker,
+                all_bars.get(ticker, []),
+                reference_date
+            )
+
             results.append(result)
             print(result)
 
@@ -194,13 +237,31 @@ try:
                 "signal": "ERROR",
                 "message": str(e)
             }
+
             results.append(result)
             print(result)
 
 except Exception as e:
     raise RuntimeError(f"Alpaca data download failed: {e}")
 
+
 with open("signals.json", "w") as f:
     json.dump(results, f, indent=2)
 
+
+summary = {}
+
+for result in results:
+    signal = result["signal"]
+    summary[signal] = summary.get(signal, 0) + 1
+
+
+print("")
+print("SCAN SUMMARY")
+print("------------")
+
+for signal, count in sorted(summary.items()):
+    print(f"{signal}: {count}")
+
+print("")
 print(f"Finished. Scanned {len(results)} tickers.")
