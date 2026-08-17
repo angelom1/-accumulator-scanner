@@ -1,0 +1,1423 @@
+[
+  {
+    "symbol": "AAPL",
+    "signal": "BUY",
+    "date": "2026-08-17",
+    "close": "304.14"
+  },
+  {
+    "symbol": "MSFT",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "482.515"
+  },
+  {
+    "symbol": "NVDA",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "226.335"
+  },
+  {
+    "symbol": "AMZN",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "260.58"
+  },
+  {
+    "symbol": "META",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "574.81"
+  },
+  {
+    "symbol": "GOOGL",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "342.69"
+  },
+  {
+    "symbol": "TSLA",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "340.96"
+  },
+  {
+    "symbol": "MU",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "1025.39"
+  },
+  {
+    "symbol": "AMD",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "510.88"
+  },
+  {
+    "symbol": "AVGO",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "397.585"
+  },
+  {
+    "symbol": "ARM",
+    "signal": "INSUFFICIENT_HISTORY"
+  },
+  {
+    "symbol": "TSM",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "431.785"
+  },
+  {
+    "symbol": "ASML",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "1877.05"
+  },
+  {
+    "symbol": "LRCX",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "339.455"
+  },
+  {
+    "symbol": "AMAT",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "532.35"
+  },
+  {
+    "symbol": "KLAC",
+    "signal": "BUY",
+    "date": "2026-08-17",
+    "close": "205.56"
+  },
+  {
+    "symbol": "MRVL",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "237.72"
+  },
+  {
+    "symbol": "QCOM",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "163.74"
+  },
+  {
+    "symbol": "INTC",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "104.865"
+  },
+  {
+    "symbol": "NXPI",
+    "signal": "STRONG_BUY",
+    "date": "2026-08-17",
+    "close": "236.625"
+  },
+  {
+    "symbol": "ON",
+    "signal": "BUY",
+    "date": "2026-08-17",
+    "close": "84.86"
+  },
+  {
+    "symbol": "MPWR",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "1437.03"
+  },
+  {
+    "symbol": "MCHP",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "80.855"
+  },
+  {
+    "symbol": "ADI",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "396.46"
+  },
+  {
+    "symbol": "TXN",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "285.04"
+  },
+  {
+    "symbol": "WDC",
+    "signal": "STRONG_BUY",
+    "date": "2026-08-17",
+    "close": "543.2"
+  },
+  {
+    "symbol": "STX",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "1004.7"
+  },
+  {
+    "symbol": "SNDK",
+    "signal": "INSUFFICIENT_HISTORY"
+  },
+  {
+    "symbol": "ALAB",
+    "signal": "INSUFFICIENT_HISTORY"
+  },
+  {
+    "symbol": "CRDO",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "279.425"
+  },
+  {
+    "symbol": "SMCI",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "38.05"
+  },
+  {
+    "symbol": "DELL",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "477.5"
+  },
+  {
+    "symbol": "HPE",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "58.25"
+  },
+  {
+    "symbol": "CLS",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "343"
+  },
+  {
+    "symbol": "JBL",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "370.18"
+  },
+  {
+    "symbol": "APH",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "170.56"
+  },
+  {
+    "symbol": "TEL",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "217.83"
+  },
+  {
+    "symbol": "ACLS",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "145"
+  },
+  {
+    "symbol": "AEHR",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "138.2"
+  },
+  {
+    "symbol": "COHU",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "62.785"
+  },
+  {
+    "symbol": "CAMT",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "174.76"
+  },
+  {
+    "symbol": "LSCC",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "136.76"
+  },
+  {
+    "symbol": "QRVO",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "98.4"
+  },
+  {
+    "symbol": "SWKS",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "69.87"
+  },
+  {
+    "symbol": "NBIS",
+    "signal": "INSUFFICIENT_HISTORY"
+  },
+  {
+    "symbol": "CRWV",
+    "signal": "INSUFFICIENT_HISTORY"
+  },
+  {
+    "symbol": "VRT",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "297.01"
+  },
+  {
+    "symbol": "ANET",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "199.385"
+  },
+  {
+    "symbol": "AAOI",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "154.5"
+  },
+  {
+    "symbol": "LITE",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "986.31"
+  },
+  {
+    "symbol": "COHR",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "353.37"
+  },
+  {
+    "symbol": "CIEN",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "450.38"
+  },
+  {
+    "symbol": "FN",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "595.33"
+  },
+  {
+    "symbol": "GLW",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "175.6"
+  },
+  {
+    "symbol": "KEYS",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "365.86"
+  },
+  {
+    "symbol": "NTAP",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "205.13"
+  },
+  {
+    "symbol": "PSTG",
+    "signal": "ERROR",
+    "message": "**symbol** or **figi** parameter is missing or invalid. Please provide a valid symbol according to API documentation: https://twelvedata.com/docs#reference-data"
+  },
+  {
+    "symbol": "GEV",
+    "signal": "INSUFFICIENT_HISTORY"
+  },
+  {
+    "symbol": "ETN",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "454.73"
+  },
+  {
+    "symbol": "CEG",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "276.26"
+  },
+  {
+    "symbol": "VST",
+    "signal": "BUY",
+    "date": "2026-08-17",
+    "close": "146.74"
+  },
+  {
+    "symbol": "NRG",
+    "signal": "STRONG_BUY",
+    "date": "2026-08-17",
+    "close": "122.91"
+  },
+  {
+    "symbol": "PWR",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "708.4"
+  },
+  {
+    "symbol": "HUBB",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "508.91"
+  },
+  {
+    "symbol": "EME",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "856.15"
+  },
+  {
+    "symbol": "FIX",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "1864.91"
+  },
+  {
+    "symbol": "MOD",
+    "signal": "BUY",
+    "date": "2026-08-17",
+    "close": "214.29"
+  },
+  {
+    "symbol": "BE",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "240.43"
+  },
+  {
+    "symbol": "OKLO",
+    "signal": "INSUFFICIENT_HISTORY"
+  },
+  {
+    "symbol": "SMR",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "9.435"
+  },
+  {
+    "symbol": "NNE",
+    "signal": "INSUFFICIENT_HISTORY"
+  },
+  {
+    "symbol": "CCJ",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "100.21"
+  },
+  {
+    "symbol": "LEU",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "187.43"
+  },
+  {
+    "symbol": "UEC",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "11.335"
+  },
+  {
+    "symbol": "UUUU",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "15.1"
+  },
+  {
+    "symbol": "BWXT",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "173.515"
+  },
+  {
+    "symbol": "TLN",
+    "signal": "INSUFFICIENT_HISTORY"
+  },
+  {
+    "symbol": "PLTR",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "174.88"
+  },
+  {
+    "symbol": "ORCL",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "146.865"
+  },
+  {
+    "symbol": "CRM",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "191.72"
+  },
+  {
+    "symbol": "NOW",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "119.28"
+  },
+  {
+    "symbol": "APP",
+    "signal": "STRONG_BUY",
+    "date": "2026-08-17",
+    "close": "316"
+  },
+  {
+    "symbol": "CRWD",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "215.25"
+  },
+  {
+    "symbol": "PANW",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "377.2"
+  },
+  {
+    "symbol": "NET",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "304.695"
+  },
+  {
+    "symbol": "DDOG",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "246.77"
+  },
+  {
+    "symbol": "SNOW",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "330.5"
+  },
+  {
+    "symbol": "MDB",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "443.76"
+  },
+  {
+    "symbol": "GTLB",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "41.31"
+  },
+  {
+    "symbol": "PATH",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "15.815"
+  },
+  {
+    "symbol": "IOT",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "38.89"
+  },
+  {
+    "symbol": "S",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "22.075"
+  },
+  {
+    "symbol": "FTNT",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "156.6"
+  },
+  {
+    "symbol": "CYBR",
+    "signal": "ERROR",
+    "message": "This symbol is available starting with the Pro or Venture plan. Consider upgrading now at https://twelvedata.com/pricing"
+  },
+  {
+    "symbol": "ZS",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "184.55"
+  },
+  {
+    "symbol": "OKTA",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "144.25"
+  },
+  {
+    "symbol": "TEAM",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "158.67"
+  },
+  {
+    "symbol": "HUBS",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "216.63"
+  },
+  {
+    "symbol": "ESTC",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "84.15"
+  },
+  {
+    "symbol": "CFLT",
+    "signal": "ERROR",
+    "message": "**symbol** or **figi** parameter is missing or invalid. Please provide a valid symbol according to API documentation: https://twelvedata.com/docs#reference-data"
+  },
+  {
+    "symbol": "DOCN",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "134.08"
+  },
+  {
+    "symbol": "TWLO",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "233.62"
+  },
+  {
+    "symbol": "RDDT",
+    "signal": "INSUFFICIENT_HISTORY"
+  },
+  {
+    "symbol": "SHOP",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "150.41"
+  },
+  {
+    "symbol": "UBER",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "76.28"
+  },
+  {
+    "symbol": "DASH",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "217.795"
+  },
+  {
+    "symbol": "ABNB",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "181.11"
+  },
+  {
+    "symbol": "RBLX",
+    "signal": "STRONG_BUY",
+    "date": "2026-08-17",
+    "close": "38.36"
+  },
+  {
+    "symbol": "DUOL",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "130.5"
+  },
+  {
+    "symbol": "CVNA",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "72.935"
+  },
+  {
+    "symbol": "AFRM",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "75.66"
+  },
+  {
+    "symbol": "SOFI",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "18.455"
+  },
+  {
+    "symbol": "HOOD",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "95.855"
+  },
+  {
+    "symbol": "COIN",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "150.6"
+  },
+  {
+    "symbol": "MSTR",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "97.19"
+  },
+  {
+    "symbol": "CAVA",
+    "signal": "INSUFFICIENT_HISTORY"
+  },
+  {
+    "symbol": "CELH",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "30.07"
+  },
+  {
+    "symbol": "ELF",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "93.84"
+  },
+  {
+    "symbol": "ONON",
+    "signal": "BUY",
+    "date": "2026-08-17",
+    "close": "31.56"
+  },
+  {
+    "symbol": "BROS",
+    "signal": "STRONG_BUY",
+    "date": "2026-08-17",
+    "close": "50.16"
+  },
+  {
+    "symbol": "TOST",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "34.15"
+  },
+  {
+    "symbol": "HIMS",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "28.3"
+  },
+  {
+    "symbol": "SE",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "120.035"
+  },
+  {
+    "symbol": "MELI",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "1793"
+  },
+  {
+    "symbol": "PDD",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "85.62"
+  },
+  {
+    "symbol": "BABA",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "124.4"
+  },
+  {
+    "symbol": "JD",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "28.505"
+  },
+  {
+    "symbol": "GRAB",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "3.655"
+  },
+  {
+    "symbol": "RIVN",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "14.955"
+  },
+  {
+    "symbol": "LCID",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "6.07"
+  },
+  {
+    "symbol": "IONQ",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "46.69"
+  },
+  {
+    "symbol": "RGTI",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "18.765"
+  },
+  {
+    "symbol": "QBTS",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "21.11"
+  },
+  {
+    "symbol": "QUBT",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "9.02"
+  },
+  {
+    "symbol": "RKLB",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "83.635"
+  },
+  {
+    "symbol": "ASTS",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "73.185"
+  },
+  {
+    "symbol": "LUNR",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "20.07"
+  },
+  {
+    "symbol": "RDW",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "13.8"
+  },
+  {
+    "symbol": "BKSY",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "31.445"
+  },
+  {
+    "symbol": "PL",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "24.72"
+  },
+  {
+    "symbol": "AVAV",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "183.84"
+  },
+  {
+    "symbol": "KTOS",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "63.115"
+  },
+  {
+    "symbol": "RCAT",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "10.51"
+  },
+  {
+    "symbol": "JOBY",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "7.84"
+  },
+  {
+    "symbol": "ACHR",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "6.365"
+  },
+  {
+    "symbol": "LDOS",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "142.41"
+  },
+  {
+    "symbol": "HII",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "323.61"
+  },
+  {
+    "symbol": "LLY",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "1193.44"
+  },
+  {
+    "symbol": "ISRG",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "391.345"
+  },
+  {
+    "symbol": "TGTX",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "49.52"
+  },
+  {
+    "symbol": "TWST",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "123.12"
+  },
+  {
+    "symbol": "VKTX",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "33.27"
+  },
+  {
+    "symbol": "CRSP",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "54.41"
+  },
+  {
+    "symbol": "RXRX",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "3.125"
+  },
+  {
+    "symbol": "TEM",
+    "signal": "INSUFFICIENT_HISTORY"
+  },
+  {
+    "symbol": "OSCR",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "31.695"
+  },
+  {
+    "symbol": "PRAX",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "384.57"
+  },
+  {
+    "symbol": "LGND",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "296.87"
+  },
+  {
+    "symbol": "MRNA",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "64.73"
+  },
+  {
+    "symbol": "BNTX",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "91.7"
+  },
+  {
+    "symbol": "VRTX",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "513.84"
+  },
+  {
+    "symbol": "REGN",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "809.67"
+  },
+  {
+    "symbol": "ALNY",
+    "signal": "STRONG_BUY",
+    "date": "2026-08-17",
+    "close": "224.92"
+  },
+  {
+    "symbol": "GH",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "161.09"
+  },
+  {
+    "symbol": "NTRA",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "316.845"
+  },
+  {
+    "symbol": "RARE",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "26.41"
+  },
+  {
+    "symbol": "BEAM",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "27.16"
+  },
+  {
+    "symbol": "JPM",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "364.05"
+  },
+  {
+    "symbol": "GS",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "1051.53"
+  },
+  {
+    "symbol": "V",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "361.275"
+  },
+  {
+    "symbol": "MA",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "563.94"
+  },
+  {
+    "symbol": "XYZ",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "80.1"
+  },
+  {
+    "symbol": "PYPL",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "60.79"
+  },
+  {
+    "symbol": "NU",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "14.88"
+  },
+  {
+    "symbol": "UPST",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "29.39"
+  },
+  {
+    "symbol": "LMND",
+    "signal": "BUY",
+    "date": "2026-08-17",
+    "close": "50.45"
+  },
+  {
+    "symbol": "ROOT",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "49.73"
+  },
+  {
+    "symbol": "IBKR",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "92.46"
+  },
+  {
+    "symbol": "SCHW",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "111.095"
+  },
+  {
+    "symbol": "C",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "139.08"
+  },
+  {
+    "symbol": "BAC",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "64.815"
+  },
+  {
+    "symbol": "KKR",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "110.14"
+  },
+  {
+    "symbol": "APO",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "136.52"
+  },
+  {
+    "symbol": "BX",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "140.85"
+  },
+  {
+    "symbol": "AA",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "50.72"
+  },
+  {
+    "symbol": "FCX",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "68.43"
+  },
+  {
+    "symbol": "CLF",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "11.835"
+  },
+  {
+    "symbol": "MP",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "57.79"
+  },
+  {
+    "symbol": "ALB",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "133"
+  },
+  {
+    "symbol": "SQM",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "74.15"
+  },
+  {
+    "symbol": "CDE",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "19.44"
+  },
+  {
+    "symbol": "AG",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "19.78"
+  },
+  {
+    "symbol": "HL",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "18.875"
+  },
+  {
+    "symbol": "NEM",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "120.88"
+  },
+  {
+    "symbol": "GOLD",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "44.555"
+  },
+  {
+    "symbol": "X",
+    "signal": "ERROR",
+    "message": "This symbol is available starting with the Grow or Venture plan. Consider upgrading now at https://twelvedata.com/pricing"
+  },
+  {
+    "symbol": "NUE",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "270.02"
+  },
+  {
+    "symbol": "STLD",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "257.16"
+  },
+  {
+    "symbol": "TECK",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "64.94"
+  },
+  {
+    "symbol": "VALE",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "13.745"
+  },
+  {
+    "symbol": "RIO",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "96.73"
+  },
+  {
+    "symbol": "XOM",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "160.44"
+  },
+  {
+    "symbol": "CVX",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "201.14"
+  },
+  {
+    "symbol": "COP",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "125.93"
+  },
+  {
+    "symbol": "OXY",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "58.24"
+  },
+  {
+    "symbol": "FANG",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "202.04"
+  },
+  {
+    "symbol": "DVN",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "46.44"
+  },
+  {
+    "symbol": "EOG",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "143.6"
+  },
+  {
+    "symbol": "SLB",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "53.27"
+  },
+  {
+    "symbol": "HAL",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "34.28"
+  },
+  {
+    "symbol": "BKR",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "64.35"
+  },
+  {
+    "symbol": "LNG",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "266.47"
+  },
+  {
+    "symbol": "EQT",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "52.725"
+  },
+  {
+    "symbol": "RRC",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "39.165"
+  },
+  {
+    "symbol": "AR",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "36.19"
+  },
+  {
+    "symbol": "CTRA",
+    "signal": "ERROR",
+    "message": "This symbol is available starting with the Pro or Venture plan. Consider upgrading now at https://twelvedata.com/pricing"
+  },
+  {
+    "symbol": "FSLR",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "222.835"
+  },
+  {
+    "symbol": "ENPH",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "38.64"
+  },
+  {
+    "symbol": "RUN",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "9.85"
+  },
+  {
+    "symbol": "NXT",
+    "signal": "INSUFFICIENT_HISTORY"
+  },
+  {
+    "symbol": "FLNC",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "12.6"
+  },
+  {
+    "symbol": "STEM",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "6.225"
+  },
+  {
+    "symbol": "QS",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "6.135"
+  },
+  {
+    "symbol": "CHPT",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "6.06"
+  },
+  {
+    "symbol": "BLDP",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "2.595"
+  },
+  {
+    "symbol": "CAT",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "879.465"
+  },
+  {
+    "symbol": "DE",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "603.21"
+  },
+  {
+    "symbol": "URI",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "1158.83"
+  },
+  {
+    "symbol": "PH",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "1049.3"
+  },
+  {
+    "symbol": "HON",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "229.955"
+  },
+  {
+    "symbol": "RTX",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "223.46"
+  },
+  {
+    "symbol": "GE",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "368.16"
+  },
+  {
+    "symbol": "NFLX",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "76.55"
+  },
+  {
+    "symbol": "ADBE",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "253.93"
+  },
+  {
+    "symbol": "INTU",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "336.15"
+  },
+  {
+    "symbol": "COST",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "950.24"
+  },
+  {
+    "symbol": "WMT",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "114.5"
+  },
+  {
+    "symbol": "AMGN",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "417.74"
+  },
+  {
+    "symbol": "BKNG",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "208.69"
+  },
+  {
+    "symbol": "MAR",
+    "signal": "BUY",
+    "date": "2026-08-17",
+    "close": "354.935"
+  },
+  {
+    "symbol": "CMG",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "33.435"
+  },
+  {
+    "symbol": "SPOT",
+    "signal": "NONE",
+    "date": "2026-08-17",
+    "close": "504.005"
+  }
+]
