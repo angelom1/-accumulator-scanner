@@ -2,1105 +2,1105 @@
   {
     "symbol": "NBIS",
     "signal": "INSUFFICIENT_HISTORY",
-    "date": "2026-10-01"
+    "date": "2026-10-02"
   },
   {
     "symbol": "CRWV",
     "signal": "INSUFFICIENT_HISTORY",
-    "date": "2026-10-01"
+    "date": "2026-10-02"
   },
   {
     "symbol": "IREN",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "40.21"
+    "date": "2026-10-02",
+    "close": "41.15"
   },
   {
     "symbol": "APLD",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "24.25"
+    "date": "2026-10-02",
+    "close": "25.055"
   },
   {
     "symbol": "RIOT",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "19.55"
+    "date": "2026-10-02",
+    "close": "19.465"
   },
   {
     "symbol": "MARA",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "11.165"
+    "date": "2026-10-02",
+    "close": "11.105"
   },
   {
     "symbol": "CLSK",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "12.485"
+    "date": "2026-10-02",
+    "close": "12.535"
   },
   {
     "symbol": "HUT",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "86.24"
+    "date": "2026-10-02",
+    "close": "88.705"
   },
   {
     "symbol": "CIFR",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "15.265"
+    "date": "2026-10-02",
+    "close": "15.52"
   },
   {
     "symbol": "WULF",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "14.88"
+    "date": "2026-10-02",
+    "close": "15.285"
   },
   {
     "symbol": "CORZ",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "16.13"
+    "date": "2026-10-02",
+    "close": "16.4"
   },
   {
     "symbol": "BTDR",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "10.67"
+    "date": "2026-10-02",
+    "close": "10.97"
   },
   {
     "symbol": "SOUN",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "6.11"
+    "date": "2026-10-02",
+    "close": "5.835"
   },
   {
     "symbol": "LUNR",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "14.135"
+    "date": "2026-10-02",
+    "close": "14.68"
   },
   {
     "symbol": "GLXY",
     "signal": "INSUFFICIENT_HISTORY",
-    "date": "2026-10-01"
+    "date": "2026-10-02"
   },
   {
     "symbol": "NVDA",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "232.15"
+    "date": "2026-10-02",
+    "close": "234.43"
   },
   {
     "symbol": "AMD",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "618.305"
+    "date": "2026-10-02",
+    "close": "631.17"
   },
   {
     "symbol": "AVGO",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "348.07"
+    "date": "2026-10-02",
+    "close": "354.58"
   },
   {
     "symbol": "ARM",
     "signal": "INSUFFICIENT_HISTORY",
-    "date": "2026-10-01"
+    "date": "2026-10-02"
   },
   {
     "symbol": "MRVL",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "268.81"
+    "date": "2026-10-02",
+    "close": "272.27"
   },
   {
     "symbol": "ASTS",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "57.32"
+    "date": "2026-10-02",
+    "close": "58.53"
   },
   {
     "symbol": "ALAB",
     "signal": "INSUFFICIENT_HISTORY",
-    "date": "2026-10-01"
+    "date": "2026-10-02"
   },
   {
     "symbol": "SMCI",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "41.97"
+    "date": "2026-10-02",
+    "close": "43.535"
   },
   {
     "symbol": "MU",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "1090.585"
+    "date": "2026-10-02",
+    "close": "1074.585"
   },
   {
     "symbol": "LRCX",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "339.83"
+    "date": "2026-10-02",
+    "close": "347.66"
   },
   {
     "symbol": "AMAT",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "531.91"
+    "date": "2026-10-02",
+    "close": "536.475"
   },
   {
     "symbol": "KLAC",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "201.26"
+    "date": "2026-10-02",
+    "close": "206.265"
   },
   {
     "symbol": "ON",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "79.275"
+    "date": "2026-10-02",
+    "close": "83.29"
   },
   {
     "symbol": "TER",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "415.98"
+    "date": "2026-10-02",
+    "close": "447.84"
   },
   {
     "symbol": "ENTG",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "158.585"
+    "date": "2026-10-02",
+    "close": "167.2"
   },
   {
     "symbol": "NXPI",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "241.51"
+    "date": "2026-10-02",
+    "close": "244.21"
   },
   {
     "symbol": "ADI",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "405.15"
+    "date": "2026-10-02",
+    "close": "415.73"
   },
   {
     "symbol": "MCHP",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "79.31"
+    "date": "2026-10-02",
+    "close": "81.6"
   },
   {
     "symbol": "WOLF",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "30.85"
+    "date": "2026-10-02",
+    "close": "35.14"
   },
   {
     "symbol": "GFS",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "48.71"
+    "date": "2026-10-02",
+    "close": "50.01"
   },
   {
     "symbol": "STX",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "933.95"
+    "date": "2026-10-02",
+    "close": "843.85"
   },
   {
     "symbol": "WDC",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "456.57"
+    "date": "2026-10-02",
+    "close": "417.87"
   },
   {
     "symbol": "SWKS",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "83.525"
+    "date": "2026-10-02",
+    "close": "84.865"
   },
   {
     "symbol": "QRVO",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "112.72"
+    "date": "2026-10-02",
+    "close": "113.76"
   },
   {
     "symbol": "PLTR",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "190.155"
+    "date": "2026-10-02",
+    "close": "189.695"
   },
   {
     "symbol": "SNOW",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "340.065"
+    "date": "2026-10-02",
+    "close": "340.02"
   },
   {
     "symbol": "DDOG",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "276.82"
+    "date": "2026-10-02",
+    "close": "278.19"
   },
   {
     "symbol": "NET",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "350.08"
+    "date": "2026-10-02",
+    "close": "351.02"
   },
   {
     "symbol": "CRWD",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "266.2"
+    "date": "2026-10-02",
+    "close": "267.96"
   },
   {
     "symbol": "PANW",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "391.86"
+    "date": "2026-10-02",
+    "close": "401"
   },
   {
     "symbol": "ZS",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "199.36"
+    "date": "2026-10-02",
+    "close": "196.94"
   },
   {
     "symbol": "MDB",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "351.145"
+    "date": "2026-10-02",
+    "close": "357.325"
   },
   {
     "symbol": "NOW",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "138.215"
+    "date": "2026-10-02",
+    "close": "135.17"
   },
   {
     "symbol": "TEAM",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "190.21"
+    "date": "2026-10-02",
+    "close": "187.49"
   },
   {
     "symbol": "S",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "24.47"
+    "date": "2026-10-02",
+    "close": "25.2"
   },
   {
     "symbol": "GTLB",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "49.67"
+    "date": "2026-10-02",
+    "close": "49.57"
   },
   {
     "symbol": "CFLT",
     "signal": "STALE_DATA",
     "date": "2026-03-16",
-    "reference_date": "2026-10-01",
+    "reference_date": "2026-10-02",
     "close": "30.995"
   },
   {
     "symbol": "ESTC",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "91.99"
+    "date": "2026-10-02",
+    "close": "93.91"
   },
   {
     "symbol": "AI",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "11.26"
+    "date": "2026-10-02",
+    "close": "11.135"
   },
   {
     "symbol": "BBAI",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "2.795"
+    "date": "2026-10-02",
+    "close": "2.59"
   },
   {
     "symbol": "MSFT",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "515.705"
+    "date": "2026-10-02",
+    "close": "515.29"
   },
   {
     "symbol": "GOOGL",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "338.455"
+    "date": "2026-10-02",
+    "close": "343.185"
   },
   {
     "symbol": "GOOG",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "335.41"
+    "date": "2026-10-02",
+    "close": "339.98"
   },
   {
     "symbol": "AMZN",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "249.44"
+    "date": "2026-10-02",
+    "close": "250.5"
   },
   {
     "symbol": "META",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "727.46"
+    "date": "2026-10-02",
+    "close": "728.31"
   },
   {
     "symbol": "ORCL",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "137.91"
+    "date": "2026-10-02",
+    "close": "141.765"
   },
   {
     "symbol": "IBM",
-    "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "226.8"
+    "signal": "BUY",
+    "date": "2026-10-02",
+    "close": "222"
   },
   {
     "symbol": "CRM",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "235.77"
+    "date": "2026-10-02",
+    "close": "234.39"
   },
   {
     "symbol": "ADBE",
     "signal": "BUY",
-    "date": "2026-10-01",
-    "close": "242.69"
+    "date": "2026-10-02",
+    "close": "238.25"
   },
   {
     "symbol": "TSLA",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "357.185"
+    "date": "2026-10-02",
+    "close": "370.82"
   },
   {
     "symbol": "VST",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "138.22"
+    "date": "2026-10-02",
+    "close": "137.16"
   },
   {
     "symbol": "CEG",
-    "signal": "BUY",
-    "date": "2026-10-01",
-    "close": "257.58"
+    "signal": "NONE",
+    "date": "2026-10-02",
+    "close": "254.745"
   },
   {
     "symbol": "NRG",
     "signal": "STRONG_BUY",
-    "date": "2026-10-01",
-    "close": "96.44"
+    "date": "2026-10-02",
+    "close": "95.035"
   },
   {
     "symbol": "TLN",
     "signal": "INSUFFICIENT_HISTORY",
-    "date": "2026-10-01"
+    "date": "2026-10-02"
   },
   {
     "symbol": "GEV",
     "signal": "INSUFFICIENT_HISTORY",
-    "date": "2026-10-01"
+    "date": "2026-10-02"
   },
   {
     "symbol": "ETN",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "438.15"
+    "date": "2026-10-02",
+    "close": "436.555"
   },
   {
     "symbol": "EMR",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "158.255"
+    "date": "2026-10-02",
+    "close": "161.6"
   },
   {
     "symbol": "VRT",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "247.46"
+    "date": "2026-10-02",
+    "close": "251.43"
   },
   {
     "symbol": "NVT",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "165.44"
+    "date": "2026-10-02",
+    "close": "169.35"
   },
   {
     "symbol": "PWR",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "658.045"
+    "date": "2026-10-02",
+    "close": "677.25"
   },
   {
     "symbol": "IONQ",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "44.15"
+    "date": "2026-10-02",
+    "close": "44.035"
   },
   {
     "symbol": "RGTI",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "15.63"
+    "date": "2026-10-02",
+    "close": "15.38"
   },
   {
     "symbol": "QBTS",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "16.56"
+    "date": "2026-10-02",
+    "close": "16.155"
   },
   {
     "symbol": "QUBT",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "8.43"
+    "date": "2026-10-02",
+    "close": "8.265"
   },
   {
     "symbol": "COIN",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "190.23"
+    "date": "2026-10-02",
+    "close": "181.63"
   },
   {
     "symbol": "MSTR",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "159.675"
+    "date": "2026-10-02",
+    "close": "156.63"
   },
   {
     "symbol": "SOFI",
     "signal": "NONE",
-    "date": "2026-10-01",
+    "date": "2026-10-02",
     "close": "15.855"
   },
   {
     "symbol": "HOOD",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "111.865"
+    "date": "2026-10-02",
+    "close": "113.17"
   },
   {
     "symbol": "AFRM",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "69.83"
+    "date": "2026-10-02",
+    "close": "70.97"
   },
   {
     "symbol": "UPST",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "23.08"
+    "date": "2026-10-02",
+    "close": "22.98"
   },
   {
     "symbol": "PYPL",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "53.315"
+    "date": "2026-10-02",
+    "close": "52.835"
   },
   {
     "symbol": "SQ",
     "signal": "STALE_DATA",
     "date": "2025-01-17",
-    "reference_date": "2026-10-01",
+    "reference_date": "2026-10-02",
     "close": "86.95"
   },
   {
     "symbol": "RIVN",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "14.845"
+    "date": "2026-10-02",
+    "close": "14.145"
   },
   {
     "symbol": "LCID",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "4.2"
+    "date": "2026-10-02",
+    "close": "4.115"
   },
   {
     "symbol": "NIO",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "3.415"
+    "date": "2026-10-02",
+    "close": "3.395"
   },
   {
     "symbol": "XPEV",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "9.49"
+    "date": "2026-10-02",
+    "close": "9.215"
   },
   {
     "symbol": "LI",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "11.135"
+    "date": "2026-10-02",
+    "close": "10.7"
   },
   {
     "symbol": "ACHR",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "5.055"
+    "date": "2026-10-02",
+    "close": "4.855"
   },
   {
     "symbol": "JOBY",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "5.975"
+    "date": "2026-10-02",
+    "close": "5.92"
   },
   {
     "symbol": "RKLB",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "70.77"
+    "date": "2026-10-02",
+    "close": "73.54"
   },
   {
     "symbol": "INTC",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "120.85"
+    "date": "2026-10-02",
+    "close": "119.86"
   },
   {
     "symbol": "QCOM",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "183.795"
+    "date": "2026-10-02",
+    "close": "185.31"
   },
   {
     "symbol": "TXN",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "283.195"
+    "date": "2026-10-02",
+    "close": "293.425"
   },
   {
     "symbol": "CSCO",
-    "signal": "BUY",
-    "date": "2026-10-01",
-    "close": "108.645"
+    "signal": "NONE",
+    "date": "2026-10-02",
+    "close": "111.86"
   },
   {
     "symbol": "HPE",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "65.07"
+    "date": "2026-10-02",
+    "close": "69.975"
   },
   {
     "symbol": "DELL",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "541.36"
+    "date": "2026-10-02",
+    "close": "565.64"
   },
   {
     "symbol": "JBL",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "299.38"
+    "date": "2026-10-02",
+    "close": "305.52"
   },
   {
     "symbol": "MRNA",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "191.96"
+    "date": "2026-10-02",
+    "close": "187.12"
   },
   {
     "symbol": "SRPT",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "17.86"
+    "date": "2026-10-02",
+    "close": "17.27"
   },
   {
     "symbol": "EXAS",
     "signal": "STALE_DATA",
     "date": "2026-03-20",
-    "reference_date": "2026-10-01",
+    "reference_date": "2026-10-02",
     "close": "104.94"
   },
   {
     "symbol": "ALGN",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "145.1"
+    "date": "2026-10-02",
+    "close": "144.5"
   },
   {
     "symbol": "DXCM",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "86.355"
+    "date": "2026-10-02",
+    "close": "85.08"
   },
   {
     "symbol": "VRTX",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "507.515"
+    "date": "2026-10-02",
+    "close": "503.735"
   },
   {
     "symbol": "REGN",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "741.495"
+    "date": "2026-10-02",
+    "close": "736.38"
   },
   {
     "symbol": "ILMN",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "269.4"
+    "date": "2026-10-02",
+    "close": "267.395"
   },
   {
     "symbol": "BIIB",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "225.32"
+    "date": "2026-10-02",
+    "close": "220.34"
   },
   {
     "symbol": "CVRX",
-    "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "1.64"
+    "signal": "BUY",
+    "date": "2026-10-02",
+    "close": "1.52"
   },
   {
     "symbol": "KPTI",
-    "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "1.055"
+    "signal": "BUY",
+    "date": "2026-10-02",
+    "close": "0.822"
   },
   {
     "symbol": "BIOA",
     "signal": "INSUFFICIENT_HISTORY",
-    "date": "2026-10-01"
+    "date": "2026-10-02"
   },
   {
     "symbol": "MPLT",
     "signal": "INSUFFICIENT_HISTORY",
-    "date": "2026-10-01"
+    "date": "2026-10-02"
   },
   {
     "symbol": "SKYQ",
     "signal": "INSUFFICIENT_HISTORY",
-    "date": "2026-10-01"
+    "date": "2026-10-02"
   },
   {
     "symbol": "JPM",
     "signal": "BUY",
-    "date": "2026-10-01",
-    "close": "331.94"
+    "date": "2026-10-02",
+    "close": "331.485"
   },
   {
     "symbol": "GS",
     "signal": "STRONG_BUY",
-    "date": "2026-10-01",
-    "close": "894.635"
+    "date": "2026-10-02",
+    "close": "902.17"
   },
   {
     "symbol": "MS",
     "signal": "STRONG_BUY",
-    "date": "2026-10-01",
-    "close": "186.66"
+    "date": "2026-10-02",
+    "close": "191.05"
   },
   {
     "symbol": "BAC",
     "signal": "STRONG_BUY",
-    "date": "2026-10-01",
-    "close": "53.575"
+    "date": "2026-10-02",
+    "close": "53.74"
   },
   {
     "symbol": "WFC",
     "signal": "BUY",
-    "date": "2026-10-01",
-    "close": "79.535"
+    "date": "2026-10-02",
+    "close": "80.32"
   },
   {
     "symbol": "SCHW",
     "signal": "BUY",
-    "date": "2026-10-01",
-    "close": "98.28"
+    "date": "2026-10-02",
+    "close": "97.08"
   },
   {
     "symbol": "C",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "126.67"
+    "date": "2026-10-02",
+    "close": "128.55"
   },
   {
     "symbol": "AXP",
     "signal": "BUY",
-    "date": "2026-10-01",
-    "close": "300.15"
+    "date": "2026-10-02",
+    "close": "302.8"
   },
   {
     "symbol": "BLK",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "1063.37"
+    "date": "2026-10-02",
+    "close": "1069.33"
   },
   {
     "symbol": "COF",
     "signal": "BUY",
-    "date": "2026-10-01",
-    "close": "192.87"
+    "date": "2026-10-02",
+    "close": "195.32"
   },
   {
     "symbol": "COST",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "915.07"
+    "date": "2026-10-02",
+    "close": "917.39"
   },
   {
     "symbol": "WMT",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "104.615"
+    "date": "2026-10-02",
+    "close": "104.125"
   },
   {
     "symbol": "NKE",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "36.07"
+    "date": "2026-10-02",
+    "close": "33.765"
   },
   {
     "symbol": "LULU",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "97.73"
+    "date": "2026-10-02",
+    "close": "94.75"
   },
   {
     "symbol": "CMG",
     "signal": "BUY",
-    "date": "2026-10-01",
-    "close": "32.11"
+    "date": "2026-10-02",
+    "close": "32.065"
   },
   {
     "symbol": "SBUX",
     "signal": "BUY",
-    "date": "2026-10-01",
-    "close": "94.24"
+    "date": "2026-10-02",
+    "close": "94.745"
   },
   {
     "symbol": "ABNB",
     "signal": "STRONG_BUY",
-    "date": "2026-10-01",
-    "close": "160.36"
+    "date": "2026-10-02",
+    "close": "162.865"
   },
   {
     "symbol": "UBER",
     "signal": "BUY",
-    "date": "2026-10-01",
-    "close": "67.95"
+    "date": "2026-10-02",
+    "close": "68.245"
   },
   {
     "symbol": "DASH",
     "signal": "BUY",
-    "date": "2026-10-01",
-    "close": "182.295"
+    "date": "2026-10-02",
+    "close": "187.96"
   },
   {
     "symbol": "DKNG",
     "signal": "BUY",
-    "date": "2026-10-01",
-    "close": "19.015"
+    "date": "2026-10-02",
+    "close": "18.935"
   },
   {
     "symbol": "CVNA",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "62.83"
+    "date": "2026-10-02",
+    "close": "64.095"
   },
   {
     "symbol": "ETSY",
     "signal": "BUY",
-    "date": "2026-10-01",
-    "close": "73.375"
+    "date": "2026-10-02",
+    "close": "72.89"
   },
   {
     "symbol": "YETI",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "41.25"
+    "date": "2026-10-02",
+    "close": "40.865"
   },
   {
     "symbol": "CAT",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "824.51"
+    "date": "2026-10-02",
+    "close": "847.535"
   },
   {
     "symbol": "DE",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "662.33"
+    "date": "2026-10-02",
+    "close": "682.28"
   },
   {
     "symbol": "BA",
     "signal": "BUY",
-    "date": "2026-10-01",
-    "close": "187.07"
+    "date": "2026-10-02",
+    "close": "194.89"
   },
   {
     "symbol": "LMT",
-    "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "504.51"
+    "signal": "BUY",
+    "date": "2026-10-02",
+    "close": "505.5"
   },
   {
     "symbol": "RTX",
     "signal": "BUY",
-    "date": "2026-10-01",
-    "close": "184.595"
+    "date": "2026-10-02",
+    "close": "184.84"
   },
   {
     "symbol": "GE",
     "signal": "BUY",
-    "date": "2026-10-01",
-    "close": "312.89"
+    "date": "2026-10-02",
+    "close": "310.92"
   },
   {
     "symbol": "HON",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "214.435"
+    "date": "2026-10-02",
+    "close": "214.11"
   },
   {
     "symbol": "GD",
     "signal": "STRONG_BUY",
-    "date": "2026-10-01",
-    "close": "333.05"
+    "date": "2026-10-02",
+    "close": "329.55"
   },
   {
     "symbol": "NOC",
     "signal": "BUY",
-    "date": "2026-10-01",
-    "close": "482.32"
+    "date": "2026-10-02",
+    "close": "480.12"
   },
   {
     "symbol": "XOM",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "163.695"
+    "date": "2026-10-02",
+    "close": "164.17"
   },
   {
     "symbol": "CVX",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "206.845"
+    "date": "2026-10-02",
+    "close": "207.02"
   },
   {
     "symbol": "OXY",
     "signal": "BUY",
-    "date": "2026-10-01",
-    "close": "57.525"
+    "date": "2026-10-02",
+    "close": "57.845"
   },
   {
     "symbol": "SLB",
     "signal": "BUY",
-    "date": "2026-10-01",
-    "close": "48.325"
+    "date": "2026-10-02",
+    "close": "48.85"
   },
   {
     "symbol": "DVN",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "46.97"
+    "date": "2026-10-02",
+    "close": "47.39"
   },
   {
     "symbol": "FANG",
     "signal": "BUY",
-    "date": "2026-10-01",
-    "close": "184.77"
+    "date": "2026-10-02",
+    "close": "184.275"
   },
   {
     "symbol": "MPC",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "417.86"
+    "date": "2026-10-02",
+    "close": "422.97"
   },
   {
     "symbol": "VLO",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "405.97"
+    "date": "2026-10-02",
+    "close": "406.77"
   },
   {
     "symbol": "FCX",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "69.27"
+    "date": "2026-10-02",
+    "close": "71.76"
   },
   {
     "symbol": "NEM",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "115"
+    "date": "2026-10-02",
+    "close": "115.21"
   },
   {
     "symbol": "MP",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "45.825"
+    "date": "2026-10-02",
+    "close": "46.97"
   },
   {
     "symbol": "AA",
     "signal": "BUY",
-    "date": "2026-10-01",
-    "close": "41.735"
+    "date": "2026-10-02",
+    "close": "42.12"
   },
   {
     "symbol": "X",
     "signal": "STALE_DATA",
     "date": "2025-06-17",
-    "reference_date": "2026-10-01",
+    "reference_date": "2026-10-02",
     "close": "54.85"
   },
   {
     "symbol": "CLF",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "11.335"
+    "date": "2026-10-02",
+    "close": "11.45"
   },
   {
     "symbol": "DAL",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "83.69"
+    "date": "2026-10-02",
+    "close": "83.79"
   },
   {
     "symbol": "UAL",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "111.09"
+    "date": "2026-10-02",
+    "close": "112.19"
   },
   {
     "symbol": "CCL",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "25.055"
+    "date": "2026-10-02",
+    "close": "25.615"
   },
   {
     "symbol": "RCL",
     "signal": "BUY",
-    "date": "2026-10-01",
-    "close": "269.75"
+    "date": "2026-10-02",
+    "close": "275.28"
   },
   {
     "symbol": "EXPE",
-    "signal": "STRONG_BUY",
-    "date": "2026-10-01",
-    "close": "263.23"
+    "signal": "BUY",
+    "date": "2026-10-02",
+    "close": "266.1"
   },
   {
     "symbol": "WBD",
     "signal": "NONE",
-    "date": "2026-10-01",
+    "date": "2026-10-02",
     "close": "30.945"
   },
   {
     "symbol": "PARA",
-    "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "0.5894"
+    "signal": "BUY",
+    "date": "2026-10-02",
+    "close": "0.52"
   },
   {
     "symbol": "SPOT",
     "signal": "BUY",
-    "date": "2026-10-01",
-    "close": "495.28"
+    "date": "2026-10-02",
+    "close": "473.38"
   },
   {
     "symbol": "ROKU",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "150.64"
+    "date": "2026-10-02",
+    "close": "152.22"
   },
   {
     "symbol": "LYV",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "166.64"
+    "date": "2026-10-02",
+    "close": "168.51"
   },
   {
     "symbol": "SPY",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "764.81"
+    "date": "2026-10-02",
+    "close": "768.84"
   },
   {
     "symbol": "QQQ",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "743.66"
+    "date": "2026-10-02",
+    "close": "748.52"
   },
   {
     "symbol": "IWM",
     "signal": "BUY",
-    "date": "2026-10-01",
-    "close": "279.33"
+    "date": "2026-10-02",
+    "close": "281.385"
   },
   {
     "symbol": "SMH",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "619.99"
+    "date": "2026-10-02",
+    "close": "629.54"
   },
   {
     "symbol": "XLK",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "198.35"
+    "date": "2026-10-02",
+    "close": "199.64"
   },
   {
     "symbol": "XLE",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "62.52"
+    "date": "2026-10-02",
+    "close": "62.795"
   },
   {
     "symbol": "XLF",
     "signal": "STRONG_BUY",
-    "date": "2026-10-01",
-    "close": "53.305"
+    "date": "2026-10-02",
+    "close": "53.51"
   },
   {
     "symbol": "TLT",
     "signal": "BUY",
-    "date": "2026-10-01",
-    "close": "77.76"
+    "date": "2026-10-02",
+    "close": "77.41"
   },
   {
     "symbol": "GLD",
     "signal": "STRONG_BUY",
-    "date": "2026-10-01",
-    "close": "382.76"
+    "date": "2026-10-02",
+    "close": "379.555"
   },
   {
     "symbol": "UVXY",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "17.475"
+    "date": "2026-10-02",
+    "close": "17.07"
   },
   {
     "symbol": "TQQQ",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "79.215"
+    "date": "2026-10-02",
+    "close": "80.71"
   },
   {
     "symbol": "SQQQ",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "33.89"
+    "date": "2026-10-02",
+    "close": "33.28"
   },
   {
     "symbol": "SOXL",
     "signal": "NONE",
-    "date": "2026-10-01",
-    "close": "155.33"
+    "date": "2026-10-02",
+    "close": "163.04"
   }
 ]
